@@ -1,0 +1,36 @@
+{
+
+  "manifest_version": 2,
+  "name": "Cached",
+  "version": "1.0",
+  "description": "Cached Firefox Plugin Which Makes Our Work Easy.",
+  "icons": {
+    "48": "icons/icon.jpg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hello@cached.id"
+    }
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon.jpg",
+      "32": "icons/icon.jpg"
+    }
+  },
+  "permissions": [
+      "tabs",
+      "cookies",
+      "browsingData",
+      "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.cached.id/*"],
+      "js": ["URL.js"]
+    }
+  ]
+}
