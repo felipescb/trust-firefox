@@ -1,5 +1,5 @@
 var portFromCS;
-var triggerUrl = "https://tate.cached.id/end"
+var triggerUrl = "https://va.cached.id/end"
 
 function onError(error) {
   console.log(`Error: ${error}`);
@@ -23,7 +23,7 @@ function connected(p) {
 		    var id = tab.id;
 
 		    var newCached = browser.tabs.create({
-    			url:"https://tate.cached.id"
+    			url:"https://va.cached.id"
   			});
 
   			newCached.then(function() {
