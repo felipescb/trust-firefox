@@ -1,5 +1,5 @@
 var portFromCS;
-var triggerUrl = "https://piksel.cached.id/end"
+var triggerUrl = "https://experimenta.cached.id/end"
 
 function onError(error) {
   console.log(`Error: ${error}`);
@@ -23,7 +23,7 @@ function connected(p) {
 		    var id = tab.id;
 
 		    var newCached = browser.tabs.create({
-    			url:"https://piksel.cached.id"
+    			url:"https://experimenta.cached.id"
   			});
 
   			newCached.then(function() {
